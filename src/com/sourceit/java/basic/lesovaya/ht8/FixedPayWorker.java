@@ -6,10 +6,10 @@ public class FixedPayWorker extends AbstractWorker {
 
 	private double salary;
 
-	public FixedPayWorker(int id, String firstName, String surName,
+	public FixedPayWorker(int id, String firstName, String surName, String patronymic, 
 			Date dateOfBirth, String sex, double salary) {
 
-		super(id, firstName, surName, dateOfBirth, sex);
+		super(id, firstName, surName, patronymic, dateOfBirth, sex);
 		this.salary = salary;
 	}
 

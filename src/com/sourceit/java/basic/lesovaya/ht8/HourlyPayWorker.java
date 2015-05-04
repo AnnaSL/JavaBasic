@@ -9,9 +9,9 @@ public class HourlyPayWorker extends AbstractWorker {
 
 	private double hourlySalary;
 
-	public HourlyPayWorker(int id, String firstName, String surName,
+	public HourlyPayWorker(int id, String firstName, String surName, String patronymic,
 			Date dateOfBirth, String sex, double hourlySalary) {
-		super(id, firstName, surName, dateOfBirth, sex);
+		super(id, firstName, surName, patronymic, dateOfBirth, sex);
 		this.hourlySalary = hourlySalary;
 	}
 

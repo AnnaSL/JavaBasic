@@ -10,25 +10,25 @@ public class Launcher {
 		List<AbstractWorker> listOfWorkers = new ArrayList<AbstractWorker>();
 		Calendar c = Calendar.getInstance();
 		c.set(1990, 3, 20);
-		listOfWorkers.add(new FixedPayWorker(1, "Mary", "Kolins", c.getTime(),
+		listOfWorkers.add(new FixedPayWorker(1, "Mary", "Kolins", "", c.getTime(),
 				"female", 500.00));
 		c.set(1989, 1, 18);
-		listOfWorkers.add(new FixedPayWorker(2, "John", "Smith", c.getTime(),
+		listOfWorkers.add(new FixedPayWorker(2, "John", "Smith", "", c.getTime(),
 				"male", 800.00));
 		c.set(1992, 4, 22);
-		listOfWorkers.add(new HourlyPayWorker(3, "Jeremy", "McConally", c
+		listOfWorkers.add(new HourlyPayWorker(3, "Jeremy", "McConally", "", c
 				.getTime(), "male", 8.50));
 		c.set(1987, 4, 15);
-		listOfWorkers.add(new HourlyPayWorker(4, "Emily", "Braun", c.getTime(),
+		listOfWorkers.add(new HourlyPayWorker(4, "Emily", "Braun", "", c.getTime(),
 				"female", 14.50));
 		c.set(1991, 8, 24);
-		listOfWorkers.add(new FixedPayWorker(5, "Denny", "Parker", c.getTime(),
+		listOfWorkers.add(new FixedPayWorker(5, "Denny", "Parker", "", c.getTime(),
 				"male", 500.00));
 		c.set(1991, 5, 16);
-		listOfWorkers.add(new HourlyPayWorker(6, "Anne", "Stuart", c.getTime(),
+		listOfWorkers.add(new HourlyPayWorker(6, "Anne", "Stuart", "",  c.getTime(),
 				"female", 6.60));
 		c.set(1991, 12, 10);
-		listOfWorkers.add(new FixedPayWorker(7, "Antony", "Parker",
+		listOfWorkers.add(new FixedPayWorker(7, "Antony", "Parker", "",
 				c.getTime(), "male", 800.00));
 
 		Collections.sort(listOfWorkers, new Comparator<AbstractWorker>() {

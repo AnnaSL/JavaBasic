@@ -11,15 +11,60 @@ public abstract class AbstractWorker implements Comparable<AbstractWorker> {
 	protected Date dateOfBirth;
 	protected String sex;
 
-	public AbstractWorker(int id, String firstName, String surName,
+	public AbstractWorker(int id, String firstName, String surName, String patronymic, 
 			Date dateOfBirth, String sex) {
 		this.workerID = id;
 		this.firstName = firstName;
 		this.surName = surName;
+		this.patronymic = patronymic;
 		this.dateOfBirth = dateOfBirth;
 		this.sex = sex;
 	}
-
+	
+	public int getWorkerID() {
+		return workerID;
+	}
+	
+	public String getFirstName() {
+		return firstName;
+	}
+	
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	
+	public String getSurName() {
+		return surName;
+	}
+	
+	public void setSurName(String surName) {
+		this.surName = surName;
+	}
+	
+	public void setPatronymic(String patronymic) {
+		this.patronymic = patronymic;
+	}
+	
+	public String getPatronymic() {
+		return patronymic;
+	}
+	
+	public Date getDateOfBirth() {
+		return dateOfBirth;
+	}
+	
+	public void setDateOfBirth(Date dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
+	}
+	
+	public String getSex() {
+		return sex;
+	}
+	
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+	
 	public abstract Double averageMonthSalary();
 
 	public String toString() {
