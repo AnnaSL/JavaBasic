@@ -15,8 +15,23 @@ public class Bank {
 		setOfAccounts = new HashSet<BankAccount>();
 	}
 	
-	public void addAccout(BankAccount bankAccount){
-				
+	public void addAccout(BankAccount bankAccount) {
+		setOfAccounts.add(bankAccount);
 	}
+	
+	public BankAccount getAccountByOwnerID(int ownerID) {
+		
+		BankAccount bankAccount = null;
+		
+		for(BankAccount ba: setOfAccounts){
+			if(ba.getOwnerID() == ownerID){
+				bankAccount = ba;
+				break;
+			}
+		}
+		return bankAccount;
+	}
+	
+	
 
 }

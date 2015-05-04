@@ -3,7 +3,7 @@ package com.sourceit.java.basic.lesovaya.ht10;
 public class BankAccount {
 	private int ID;
 	private double balance;
-	private int accountNumber;
+	private long accountNumber;
 	private int ownerID;
 	
 	public BankAccount(int ID, int accountNumber, int ownerID){
@@ -16,7 +16,7 @@ public class BankAccount {
 		return balance;
 	}
 	
-	public int getAccountNumber(){
+	public long getAccountNumber(){
 		return accountNumber;
 	}
 	
@@ -26,6 +26,7 @@ public class BankAccount {
 	
 	public void deposit(double sum){
 		balance += sum;
+		//TODO addiding sum to totallySumOfMoney
 	}
 	
 	public void withdraw(double sum){
