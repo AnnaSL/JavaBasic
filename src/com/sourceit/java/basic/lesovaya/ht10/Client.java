@@ -1,6 +1,7 @@
 package com.sourceit.java.basic.lesovaya.ht10;
 
 import java.util.Date;
+import java.util.Random;
 
 public class Client {
 	private int ID;

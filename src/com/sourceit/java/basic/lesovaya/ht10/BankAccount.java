@@ -6,7 +6,7 @@ public class BankAccount {
 	private long accountNumber;
 	private int ownerID;
 	
-	public BankAccount(int ID, int accountNumber, int ownerID){
+	public BankAccount(int ID, long accountNumber, int ownerID){
 		this.ID = ID;
 		this.accountNumber = accountNumber;
 		this.ownerID = ownerID;
@@ -39,6 +39,33 @@ public class BankAccount {
 	
 	public String toString(){
 		return "Number of account: " + accountNumber;
+	}
+	
+	@Override
+	 public int hashCode()
+	 {
+		 final int PRIME = 31;
+		    int result = 1;
+		    result = PRIME * result + this.ID;
+		    return result;
+	 }
+	
+	@Override
+	 public boolean equals(Object o) {
+		 if(o == null)
+	        {
+	            return false;
+	        }
+	        if (o == this)
+	        {
+	           return true;
+	        }
+	        if (getClass() != o.getClass())
+	        {
+	            return false;
+	        }
+	        BankAccount e = (BankAccount) o;
+	        return (this.getAccountNumber() == e.getAccountNumber());
 	}
 
 }
