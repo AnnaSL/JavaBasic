@@ -28,7 +28,8 @@ public class Launcher {
 
 		IcecreamBox iceBox = new IcecreamBox();
 
-		System.out.println("***************IcecreamBox contains***************");
+		System.out
+				.println("***************IcecreamBox contains***************");
 		for (int i = 0; i < kinderGarten.getSizeOfKinderGarten(); i++) {
 
 			int randomTasteIndex = (int) (Math.random() * tasteofIceCream.length);
@@ -43,13 +44,17 @@ public class Launcher {
 
 		Educator educator = new Educator("Stasy");
 
-		System.out.println("***************Children eat icecreams:****************");
+		System.out
+				.println("***************Children eat icecreams:****************");
 		for (int i = 0; i < kinderGarten.getSizeOfKinderGarten(); i++) {
 
 			if (!kinderGarten.getChild(i).isReplete()) {
 				int randomkindOfEatIndex = (int) (Math.random() * kindOfEat.length);
-				educator.feedChildren(kinderGarten.getChild(i),iceBox.getIceCream(i));
-				System.out.println(kinderGarten.getChild(i) + " " + kindOfEat[randomkindOfEatIndex] + " " + iceBox.getIceCream(i));				
+				educator.feedChildren(kinderGarten.getChild(i),
+						iceBox.getIceCream(i));
+				System.out.println(kinderGarten.getChild(i) + " "
+						+ kindOfEat[randomkindOfEatIndex] + " "
+						+ iceBox.getIceCream(i));
 			}
 		}
 
