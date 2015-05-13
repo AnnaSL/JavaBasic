@@ -2,9 +2,6 @@ package com.sourceit.java.basic.lesovaya.ht6.classes;
 
 import java.util.Date;
 
-import com.sourceit.java.basic.lesovaya.ht6.interfaces.Eatable;
-import com.sourceit.java.basic.lesovaya.ht6.interfaces.Fedable;
-
 /**
  * Represents a child attending kindergarten
  * 

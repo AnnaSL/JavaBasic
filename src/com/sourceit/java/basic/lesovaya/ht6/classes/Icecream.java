@@ -1,6 +1,5 @@
 package com.sourceit.java.basic.lesovaya.ht6.classes;
 
-import com.sourceit.java.basic.lesovaya.ht6.interfaces.Eatable;
 
 /**
  * Represents icecream with taste, kind and weight. Class IceCream implement
@@ -61,7 +60,7 @@ public class Icecream implements Eatable {
 	 * @return a String representing of object
 	 */
 	public String toString() {
-		return taste + " " + kind + " ";
+		return taste + " " + kind + " icecream ";
 	}
 
 }

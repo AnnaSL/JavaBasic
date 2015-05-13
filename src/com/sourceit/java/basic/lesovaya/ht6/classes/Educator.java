@@ -1,6 +1,5 @@
 package com.sourceit.java.basic.lesovaya.ht6.classes;
 
-import com.sourceit.java.basic.lesovaya.ht6.interfaces.Eatable;
 
 /**
  * Represents educator in kindergarten
@@ -10,6 +9,9 @@ import com.sourceit.java.basic.lesovaya.ht6.interfaces.Eatable;
  */
 public class Educator extends Human {
 
+	public Educator(String name){
+		this.name = name;
+	}
 	/**
 	 * 
 	 * @param hungryChild
