@@ -26,7 +26,7 @@ public abstract class TextStatistics {
 	 * @param c
 	 * @return how often the character occurs in a text
 	 */
-	public abstract double getCharFrequency(char c);
+	public abstract int getCharFrequency(char c);
 	/**
 	 * 
 	 * @param c
