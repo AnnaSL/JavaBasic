@@ -12,8 +12,6 @@ import java.util.TreeMap;
 
 public class TextStatisticsImpl extends TextStatistics {
 
-private Map<String,Integer> sortedCharsByCount;
-
 	public TextStatisticsImpl(String text) {
 		super(text);
 	}
@@ -75,22 +73,27 @@ private Map<String,Integer> sortedCharsByCount;
 	@Override
 	public int getMostPopularCharCount() {
 		int maxValue = 0;
-//		for(Integer value: this.getChars().values()) {
-//			if(value > maxValue) {
-//				maxValue = value;
-//			}
-//		}
-//		
-		List<Integer> values = new ArrayList<>(this.getChars().values());
-		maxValue = values.get(values.size()-1);
+		for(Integer value: this.getChars().values()) {
+			if(value > maxValue) {
+				maxValue = value;
+			}
+		}
+		
+//		List<Integer> values = new ArrayList<>(this.getChars().values());
+//		maxValue = values.get(values.size()-1);
 		return maxValue;
 	}
 
 	@Override
 	public int getLeastPopularCharCount() {
-		int minValue;
-		List<Integer> values = new ArrayList<>(this.getChars().values());
-		minValue = values.get(0);
+		int minValue = Integer.MAX_VALUE;
+		for(Integer value: this.getChars().values()) {
+			if(value < minValue) {
+				minValue = value;
+			}
+		}
+//		List<Integer> values = new ArrayList<>(this.getChars().values());
+//		minValue = values.get(0);
 		return minValue;
 	}
 
