@@ -73,13 +73,13 @@ public class Corporation {
 		return employeesPopularNameMap;
 	}
 
-	public void createWaitingList() {
+	public Queue<Employee> createWaitingList() {
 		if(!employeesList.isEmpty()) {
 			for(Employee e: employeesList) {
 				employeesQueue.offer(e);
 			}
 		}
-		System.out.println(employeesQueue);
+		return employeesQueue;
 	}
 
 }
