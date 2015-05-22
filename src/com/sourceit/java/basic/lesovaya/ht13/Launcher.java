@@ -23,7 +23,7 @@ public class Launcher {
 		System.out.println("******** Map of the most popular names in company: ********");
 		WhimsicalToys.getMostPopularNameMap();
 		System.out.println("******** WaitingListForLacrosse: ******** ");
-		WhimsicalToys.createWaitingList();
+		System.out.println(WhimsicalToys.createWaitingList());
 		
 		
 	}
