@@ -8,7 +8,7 @@ import com.sourceit.java.basic.lesovaya.ht11.TextStatisticsImpl;
 public class IOTextStatistics {
 
 	public static void main (String[] args) throws IOException {
-
+//TODO catch exception correctly
 		BufferedReader in = null;
 		PrintWriter out = null;
 		char targetChar = 'm';
