@@ -50,11 +50,13 @@ public class CountrySort {
 			char c = '\u0000';
 			for(String s: countrySet) {
 				
-				if(c != s.charAt(0)) {
-					c = s.charAt(0);
-					out.println(Character.toString(c));
-				} 
-				out.println("    " + s);					
+				if(s.length() > 0){
+					if(c != s.charAt(0)) {
+						c = s.charAt(0);
+						out.println(Character.toString(c));
+					} 
+					out.println("    " + s);	
+				}
 			}
 		} finally {
 			if(out != null) {
