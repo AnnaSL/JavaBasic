@@ -108,9 +108,4 @@ public class TextStatisticsImpl extends TextStatistics {
 		return c;
 	}
 
-	@Override
-	public String toString() {
-		return this.getText();
-	}
-
 }
