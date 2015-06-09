@@ -71,7 +71,7 @@ public class LauncherJAR {
 			com.sourceit.java.basic.lesovaya.ct5.Search.main(args);
 			break;
 		case 5:
-			//com.sourceit.java.basic.lesovaya.ct6.Car
+			com.sourceit.java.basic.lesovaya.ct6.LauncherHT6.main(args);
 			break;
 		case 6:
 			com.sourceit.java.basic.lesovaya.ht6.classes.Launcher.main(args);
