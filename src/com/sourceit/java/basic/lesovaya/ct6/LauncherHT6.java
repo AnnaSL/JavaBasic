@@ -1,6 +1,5 @@
 package com.sourceit.java.basic.lesovaya.ct6;
 
-import com.souceit.java.basic.lesovaya.ct6.Car;
 
 public class LauncherHT6 {
 
