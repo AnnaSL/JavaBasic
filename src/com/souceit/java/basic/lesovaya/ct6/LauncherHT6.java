@@ -4,7 +4,7 @@ public class LauncherHT6 {
 
 	public static void main(String[] args) {
 		Car car = new Car();
-		System.out.println("Car was created");
+		System.out.println("Car " + car.toString() + "was created");
 	}
 
 }
